@@ -14,3 +14,9 @@ Proste REST API stworzone na zajęciach z backend development.
 1. GET /health - status API
 2. GET /data - pobranie danych
 3. POST /data - dodanie danych
+
+===============================================================
+
+added endpoints:
+1. GET /items - pobranie items
+2. POST /items - dodanie items
