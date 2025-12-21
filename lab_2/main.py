@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Request
 from fastapi.responses import Response
-from routes import tasks
+from routes import tasks, admin
 from routes import last_lessons_endpoints
 from auth import router as auth_router
 import logging
@@ -21,3 +21,4 @@ async def favicon():
 app.include_router(auth_router)
 app.include_router(tasks.router)
 app.include_router(last_lessons_endpoints.router)
+app.include_router(admin.router)
